@@ -1,0 +1,20 @@
+import java.util.Random;
+public class Main
+{
+public static void main(String[] args)
+{
+Random random = new Random();
+int bhour = 7;
+int bminute = 10;
+int bsecond = 0;
+int hour = random.nextInt(24);
+int minute = random.nextInt(60);
+int second = random.nextInt(60);
+int budilnik = bhour * 3600 + bminute * 60 + bsecond;
+int lift = hour * 3600 + minute * 60 + second;
+if (budilnik <= lift)
+System.out.println("Петя успевает на уроки");
+else
+System.out.println("Петя опоздал на уроки");
+}
+}
